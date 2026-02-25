@@ -1,8 +1,9 @@
 @use './mixins.scss' as *;
 .container {
   padding: 0 20px;
+  margin: 0 auto;
   .header {
-    background: palegoldenrod;
+    margin-bottom: 20px;
   }
   .main {
     display: grid;
@@ -11,10 +12,8 @@
       background: palegreen;
     }
     .content {
+      margin: 0 20px;
       background-color: palevioletred;
-    }
-    .right {
-      background: peru;
     }
   }
   .footer {
@@ -22,7 +21,7 @@
   }
   @include media(desktop) {
     .main {
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: auto 1fr auto;
       grid-template-areas: 'left content right';
       .left {
         grid-area: left;

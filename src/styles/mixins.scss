@@ -12,11 +12,12 @@
       @content;
     }
   } @else if $breakpoint == tablet {
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1400px) {
       @content;
     }
   } @else if $breakpoint == desktop {
-    @media (min-width: 1024px) {
+    @media (min-width: 1401px) {
+      width: 70%;
       padding: 0 100px;
       @content;
     }
