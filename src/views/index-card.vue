@@ -18,7 +18,11 @@
         </div>
         <div class="user-name">恋旧</div>
         <div class="user-description">这是我的个人博客</div>
-        <div class="user-link"></div>
+        <div class="user-link">
+          <a href="#"> <span class="iconfont icon-github github"></span> </a>
+          <a href="#"> <span class="iconfont icon-email email"></span> </a>
+          <a href="#"><span class="iconfont icon-csdn csdn"></span></a>
+        </div>
       </div>
     </div>
   </div>
@@ -82,6 +86,36 @@
       .user-description {
         color: #666;
         font-size: 14px;
+      }
+      .user-link {
+        a {
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 12px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          overflow: hidden;
+          text-align: center;
+          span {
+            display: inline-block;
+            font-size: 30px;
+            line-height: 30px;
+            transition: transform 0.3s;
+          }
+          span:hover {
+            transform: scale(1.2);
+          }
+          .github {
+            color: #333;
+          }
+          .email {
+            color: #dec5ad;
+          }
+          .csdn {
+            color: #dd1700;
+          }
+        }
       }
     }
   }
