@@ -1,13 +1,7 @@
 @mixin media($breakpoint) {
-  background: paleturquoise;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100vh;
   display: grid;
-
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'header'
     'main'
@@ -23,6 +17,7 @@
     }
   } @else if $breakpoint == desktop {
     @media (min-width: 1024px) {
+      padding: 0 100px;
       @content;
     }
   }
